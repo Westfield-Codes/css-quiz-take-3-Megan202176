@@ -29,7 +29,7 @@ body {
 .hole {
     width: 80px;
     height: 80px;
-    background-color: #8b4513;
+    background-color: #000000;
     position: relative;
     border-radius: 50%;
     margin: 10px;
@@ -39,7 +39,7 @@ body {
 .mole {
     width: 60px;
     height: 60px;
-    background-color: #555;
+    background-color:green;
     position: absolute;
     bottom: -60px;
     left: 10px;
@@ -54,8 +54,16 @@ body {
 .score-board {
     font-size: 1.5em;
     margin: 20px;
+    color:purple;
 }
 
+#score{
+		color:red;
+	}
+
+    h1{
+		color:rgb(255, 47, 255)
+	}
 
 #demo{
 	width:100%;
