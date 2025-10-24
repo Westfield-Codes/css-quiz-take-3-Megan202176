@@ -10,8 +10,8 @@ body {
 }
 
 .game {
-	width:374px;
-	height:412px;
+	width:400px;
+	height:450px;
 	margin:0 auto;
 	padding-top:15px;
     text-align: center;
@@ -22,13 +22,16 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 300px;
+    width: 400px;
     margin: 20px auto;
 }
 
 .hole {
-    width: 80px;
-    height: 80px;
+    border-color:red;
+    border-style:solid;
+    border-width:2px;
+    width: 100px;
+    height: 100px;
     background-color: #000000;
     position: relative;
     border-radius: 50%;
@@ -36,12 +39,21 @@ body {
     overflow: hidden;
 }
 
+.hole:hover {
+  background-color: yellow;
+  border-style:dotted;
+  border-width:6px;
+  border-color:magenta;
+}
+
+
 .mole {
-    width: 60px;
-    height: 60px;
-    background-color:green;
+    width: 80px;
+    height: 80px;
+    background-image: url('mole.png');
+    background-image:center;
     position: absolute;
-    bottom: -60px;
+    bottom: -80px;
     left: 10px;
     border-radius: 50%;
     transition: bottom 0.3s;
@@ -55,10 +67,12 @@ body {
     font-size: 1.5em;
     margin: 20px;
     color:purple;
+    font-weight: bold;
 }
 
 #score{
 		color:red;
+        font-weight: bold;
 	}
 
     h1{
